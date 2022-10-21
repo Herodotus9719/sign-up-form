@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="david-clode-yLDVDimvwZk-unsplash.jpg" />
+        <div class="logo">
+            <img src="leaf.svg" class="leaf">
+            <div class="logo-name">
+                Exotic.com
+            </div>
+        </div>
+    </div>
+    <div class="mainbar">
+        <div class="mainbar-content">
+            <p class="first-p">Welcome to the exotic plant boutique! Here you can buy any kind of plant you wish, so
+                sign up
+                to get started!
+            </p>
+            <form>
+                <fieldset>
+                    <legend>Enter your information:</legend>
+                    <div id="names">
+                        <div id="first-name">
+                            <label for="name">First Name</label>
+                            <input type="text" id="name" name="name" required minlength="2">
+                        </div>
+                        <div id="second-name">
+                            <label for="surname">Last Name</label>
+                            <input type="text" id="surname" name="surname" required minlength="2">
+                        </div>
+                    </div>
+                    <div id="contact">
+                        <div id="mail">
+                            <label for="mail">E-mail</label>
+                            <input type="email" id="mail" name="mail" required>
+                        </div>
+                        <div id="telephone">
+                            <label for="tel">Phone Number</label>
+                            <input type="tel" id="tel" name="tel" minlength="8" maxlength="12">
+                        </div>
+                    </div>
+                    <div id="passwords">
+                        <div id="first-password">
+                            <label for="password-1">Password</label>
+                            <input type="password" name="password-1" id="password-1" autocomplete="off" required
+                                minlength="6" maxlength="20">
+                        </div>
+                        <div id="second-password">
+                            <label for="password-2">Confirm Password</label>
+                            <input type="password" name="password-2" id="password-2" autocomplete="off" required
+                                minlength="6" maxlength="20">
+                        </div>
+                    </div>
+                    <div class="error-wrapper">
+                        <div class="error-message">* Passwords do not match!</div>
+                    </div>
+                </fieldset>
+                <div class="footer">
+                    <div class="btn">
+                        <button type="submit">Create Account</button>
+                    </div>
+                    <p class="second-p">Already have an account?
+                        <span><a href="url" class="login">Log In</a></spanv>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
